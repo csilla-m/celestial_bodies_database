@@ -68,3 +68,6 @@ git remote add csilla https://github.com/csilla-m/celestial_bodies_database.git
 git branch
 git push -u csilla main
 git push -u csilla main
+curl -I localhost:24000
+psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
